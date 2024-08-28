@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="panier.js" defer></script>
+    <link rel="stylesheet" href="panier.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfaction&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Theano+Didot&display=swap">
+    
+    <title>Panier d'Achat</title>
+</head>
+<body>
+    <article id="display">
+        <span id="cart">
+            <div class="panier">
+                <h2 id="cartwheel">🛒 (2)</h2>
+            </div>
+            <article class="chariot">
+                <div class="item" data-price="9">
+                    <span class="img-container">
+                        <img src="Img\Ari1080.jpg" alt="Dangerous Woman"  id="Ari_img">
+                        <p class="hover-img">Dangerous Woman</p>
+                    </span>
+                    <div class="info">
+                        <span class="heart">
+                            <a id="nom" href="">Ariana Grande</a>
+                            <i class="heart_Icon fas fa-heart"></i>
+                        </span>
+                        <P id="album" >Femme Fatale - Vinyle Album</P>
+                        <span class="dispo">
+                            <i class="fal fa-badge-check"></i>
+                            En stock
+                        </span>
+                        <footer>
+                        <button class="supprimer" type="button">
+                            SUPPRIMER
+                            <i class="fad fa-trash"></i>
+                        </button>
+                    </footer>
+                    </div>
+                    <div class="price">
+                        <p class="prix">$09.00</p>
+                        <span class="promo">
+                            <p class="prix" id="prix1">$90.00</p>
+                            <p class="prix" id="pourcent">-90%</p>
+                        </span>
+                        <span class="btn_quantité">
+                            <button id="btn_minus">-</button>
+                            <span id="quantity">1</span>
+                            <button id="btn_plus">+</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="item" data-price="13">
+                    <span class="img-container">
+                        <img src="Img\Riri 1080.jpg" alt="ANTI"  id="Riri_img">
+                        <P class="hover-img">ANTi</P>
+                    </span>
+                    <div class="info">
+                        <span class="heart">
+                            <a id="nom" href="">Rihanna</a>
+                            <i class="heart_Icon fas fa-heart"></i>
+                        </span>
+                        <p id="album">Rebelle - Vinyle Album</p>
+                        <span class="indispo">
+                            <i class="fal fa-exclamation-circle"></i>
+                            <span id="st0ck">7</span> <span>restants</span>
+                        </span>
+                        <footer>
+                            <button class="supprimer" type="button">
+                            SUPPRIMER
+                            <i class="fad fa-trash"></i>
+                            </button>
+                    </footer>
+                    </div>
+                    <div class="price">
+                        <p class="prix">$13.00</p>
+                        <span class="promo">
+                            <p class="prix" id="prix1">$43.33</p>
+                            <p class="prix" id="pourcent">-70%</p>
+                        </span>
+                        <span class="btn_quantité">
+                            <button id="btn_minus">-</button>
+                            <span id="quantity">1</span>
+                            <button id="btn_plus">+</button>
+                        </span>
+                    </div>
+                    
+                </div>
+            </article>
+        </span>
+        <span class="total">
+            <h2 id="resume">RÉCAPITULATIF</h2>
+            <div class="totaux">
+                <div class="prom">
+                    <span class=prom1>
+                        <label for="code" style ="font-weight: bold;"> CODE PROMO?</label>
+                        <input id="puk" placeholder="Veillez le saisir ici !"> 
+                    </span>
+                    <button id="btn_v" type="submit" href="">Valider</button>
+                </div>
+                <h2 id="sous_total">SOUS TOTAL</h2>
+                <div class="retrait">
+                    <h3 id="ex">EXPEDITION</h3>                    
+                    <div id="mag">
+                        <span>
+                            <i class="fad fa-store"></i>
+                            <span>Retrait en Mag.</span>
+                        </span>
+                        <span>Gratuite</span>
+                    </div>
+                    <div id="dom">
+                        <span>
+                            <i class="fad fa-truck"></i>
+                            <span>Livraison à Dom.</span>
+                        </span>
+                        <span>Gratuite</span>
+                    </div>
+                    <div id="inter">
+                        <span>
+                            <i class="fas fa-plane-departure"></i>
+                            <span>Livraison Inter.</span>
+                        </span>
+                        <span>Gratuite</span>
+                    </div>
+                </div>
+                <h2 id="total">TOTAL <span id="tva_in">(TVA 18%)</span></div>
+            </div>
+        </span>
+    </article>
+    <i class="fal fa-truck-fast"></i>
+</body>
+</html>

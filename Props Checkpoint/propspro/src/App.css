@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Roboto Serif";
+
+  src: url(./Police/RobotoSerif-Variable.ttf) format("truetype");
+}
+@font-face {
+  font-family: DM;
+  src: url(./Police/DMSerifText-Regular.ttf) format("truetype");
+}
